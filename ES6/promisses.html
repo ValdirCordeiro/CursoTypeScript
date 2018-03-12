@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Promisses</title>
+</head>
+<body>
+    <script>
+        const resposta = fetch("http:api.posmon.com.br/v1/cep/39660000");
+
+        resposta.then(data => data.json())
+        .then (data => {console.log(data);})
+        .catch(erro => {console.log(erro);});
+
+    </script>
+    
+</body>
+</html>
